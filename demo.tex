@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underline
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins defensively for single-page layout
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% sans serif sections
+\titleformat{\section}{
+    \bfseries \vspace{-10pt} \raggedright \normalsize
+}{}{0em}{}[\color{light-grey} {\titlerule[1pt]} \vspace{-4pt}]
+
+
+%-------------------------
+% Custom commands optimized for tight vertical budgets
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{0pt}\\
+      \textit{#3} & {\color{dark-grey} \small #4}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\LARGE Shraddha Barage} \\ \vspace{3pt}
+    \small \faPhone* \texttt{\hspace{1pt}+91-9518593190} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{shraddhabarage30@gmail.com} \hspace{1pt} $|$
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Pune, Maharashtra, India} \\ \vspace{3pt}
+    
+    \faLinkedin \hspace{1pt} \href{https://www.linkedin.com/in/shraddha-barage}{\texttt{LinkedIn}} \hspace{1pt} $|$
+    \hspace{1pt} \faGithub \hspace{1pt} \href{https://github.com/shraddha-barage}{\texttt{GitHub}}
+    \\ \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+\small{
+Results-driven Software Engineer Intern at Amdocs with hands-on experience in backend engineering, full-stack development, and AI-powered applications. Skilled in React.js, Node.js, Express.js, MongoDB, SQL, and REST API development with experience optimizing enterprise validation workflows and production systems. Built scalable AI solutions using RAG, LangChain, FAISS, and LLM integration. Strong foundation in software engineering, database optimization, and problem-solving with a passion for developing scalable and high-performance applications.
+{\vspace{-1pt}}
+}
+
+
+%-----------SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages} {: Python, SQL, Java, JavaScript}\vspace{1pt} \\
+     \textbf{Frontend} {: React.js, Responsive Web Design, Component-Based Architecture, UI Development, HTML, CSS}\vspace{1pt} \\
+     \textbf{Backend} {: Node.js, Express.js, REST API Development, API Integration, Authentication {\&} Authorization, MVC Architecture}\vspace{1pt} \\
+     \textbf{Databases} {: MongoDB, MySQL, Oracle DB, Query Optimization, Database Management, RAG, LangChain, FAISS, LLM Integration}\vspace{1pt} \\
+     \textbf{AI \& Generative AI} {: RAG, LangChain, FAISS, LLM Integration, Prompt Engineering,N8N Workflow Automation}\vspace{1pt} \\
+     \textbf{Software Engineering} {: OOPs, SDLC, Debugging \& Troubleshooting, Performance Optimization,Problem Solving, Agile Methodology}\vspace{1pt} \\
+     \textbf{Tools} {: Git, GitHub, Linux, Unix, Power BI, VS Code, Postman, JIRA, Agile/Scrum, Claude Code, Cursor AI}
+    }
+    {\vspace{-1pt}}
+    }
+ \end{itemize}
+ \vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Amdocs Development Centre India LLP}{Jan 2026 -- June 2026}
+      {Software Engineer Intern}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Constructed backend validation workflows for enterprise systems processing high-volume transactional data.}
+        \resumeItem{Optimized SQL queries and validation logic to improve data consistency and processing efficiency.}
+        \resumeItem{Applied automated validation scenarios for logical date handling, improving system reliability.}
+        \resumeItem{Debugged and resolved production-level issues in a high-availability environment.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Codtech IT Solutions Private Limited}{Aug 2025 -- Sep 2025}
+      {Full-Stack Developer}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed scalable full-stack applications using React, Node.js, and MongoDB.}
+        \resumeItem{Designed REST APIs and optimized backend performance, reducing response time by 30\%.}
+        \resumeItem{Enforced efficient frontend-backend integration for improved application scalability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {LetsGrowMore}{Jan 2025 -- Feb 2025}
+      {Web Developer Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built responsive UI components and enhanced usability across web applications.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-5pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI Knowledge Search Bot} $|$ \emph{RAG, LangChain, FAISS, N8N, LLM Integration}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered a modular RAG pipeline (embedding $\rightarrow$ FAISS retrieval $\rightarrow$ LLM generation) for semantic search over high-volume document processing.}
+            \resumeItem{Designed scalable ingestion and indexing workflows supporting concurrent multi-user queries with low-latency responses ($<2$s).}
+            \resumeItem{Integrated N8N orchestration to automate query workflows and backend processing pipelines.}
+            \resumeItem{Optimized retrieval and vector indexing strategies, enabling extensible architecture for large-scale usage.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Subscription Manager with Money Leak Detection} $|$ \emph{React, Node.js, Express.js, MongoDB}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack system to track subscriptions and analyze recurring spending behavior using React, Node, and MongoDB.}
+            \resumeItem{Created REST APIs for subscription lifecycle management and automated renewal alerts.}
+            \resumeItem{Executed rule-based anomaly detection to support data-driven financial decision-making.}
+            \resumeItem{Built dashboards for real-time insights with streamlined data aggregation and visualization.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Personal Knowledge Graph Builder} $|$ \emph{React, Node.js, MongoDB, REST APIs}}{}
+          \resumeItemListStart
+            \resumeItem{Designed a graph-based system to represent interconnected knowledge using node-edge relationships.}
+            \resumeItem{Engineered REST APIs for relationship mapping, tag-based retrieval, and efficient graph traversal.}
+            \resumeItem{Optimized MongoDB schema for fast querying of complex, linked data structures.}
+            \resumeItem{Implemented interactive visualization for real-time exploration of knowledge connections.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-5pt}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bharati Vidyapeeth's College of Engineering for Women}{Aug 2022 -- Jun 2026}
+      {Bachelor of Engineering in Information Technology}{Pune, Maharashtra, India}
+  \resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS-----------
+\section{ACHIEVEMENTS}
+ \begin{itemize}[leftmargin=0in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \small{\item{
+     \textbf{NES Innovation Awards 2026} {: Named a Top 50 Finalist}\vspace{1pt} \\
+     \textbf{Amdocs Recognition} {: Awarded Certificate of Appreciation (IWD 2026 Initiative) in April 2026}\vspace{1pt} \\
+     \textbf{Project Competitions} {: Participated in Project Nexus 3.0 National Level Project Competition at AIT Pune}
+    }
+    {\vspace{-1pt}}
+    }
+ \end{itemize}
+
+ %-----------Certifications-----------
+
+\section{CERTIFICATIONS}
+\begin{tabularx}{\textwidth}{X X}
+
+\small {Python for Machine Learning \href{https://drive.google.com/file/d/1M8EuMcKC5PWHnBElMrEsv9rsD-rtfEg8/view?usp=sharing}{\color{text-grey}\footnotesize[\faExternalLink*]} {\vspace{-1pt}}} &
+\small {Introduction to Generative AI \href{https://drive.google.com/file/d/1STIFeZO5LTFv-cCRZnQZHdq_-I3o5TRe/view?usp=sharing}{\color{text-grey}\footnotesize[\faExternalLink*]} {\vspace{-1pt}}}\\
+
+\small {Git Training \href{https://drive.google.com/file/d/14BFPzH0QbPplPNZfmB3odAIVBrMAoGxV/view?usp=sharing}{\color{text-grey}\footnotesize[\faExternalLink*]} {\vspace{-1pt}}}&
+\small {Cursor AI \href{https://drive.google.com/file/d/1-_mqaxaLeZS2xiRLWYLreYjvrOFoV1Mr/view?usp=sharing}{\color{text-grey}\footnotesize[\faExternalLink*]} {\vspace{-1pt}}}\\
+
+\small {Cloud Computing on AWS \href{https://drive.google.com/file/d/1cjjf6IiDRGbtFjVfmJu5s9QFXLNuXDUM/view?usp=sharing}{\color{text-grey}\footnotesize[\faExternalLink*]} {\vspace{-1pt}}}&
+\small {Power BI \href{https://drive.google.com/file/d/15C2hJ-D5vNMWa7TAiHFECMKt6LI0tdM8/view?usp=sharing}{\color{text-grey}\footnotesize[\faExternalLink*]} {\vspace{-1pt}}}\\
+
+
+\end{tabularx}
+
+\vspace{-8pt}
+
+% \vspace{-8pt}
+
+%-------------------------------------------
+\end{document}
